@@ -1,0 +1,95 @@
+{
+  "title": "The Golden Skate Switch",
+  "intro": "The rink's gleaming golden skate trophy has been swapped for a cheap painted copy during the couples' skate, and everyone was on the floor when it happened.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rosa",
+      "emoji": "👩‍🦰",
+      "line": "I only skate backwards, and I never cheat at anything.",
+      "wear": "red tracksuit",
+      "hands": "chalky gloves",
+      "spot": "snack bar"
+    },
+    {
+      "name": "Marcus",
+      "emoji": "🧑🏾",
+      "line": "I was busy teaching my cousin how to stop. Ask anyone.",
+      "wear": "blue puffer vest",
+      "hands": "bare hands",
+      "spot": "center rink"
+    },
+    {
+      "name": "Juniper",
+      "emoji": "👩🏻",
+      "line": "I was in the bathroom wrestling a sock. Long story.",
+      "wear": "green hoodie",
+      "hands": "chalky gloves",
+      "spot": "trophy case"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧🏽",
+      "line": "The trophy case? I barely looked at it, honestly.",
+      "wear": "red tracksuit",
+      "hands": "bare hands",
+      "spot": "trophy case"
+    },
+    {
+      "name": "Tomas",
+      "emoji": "🧑🏼",
+      "line": "My skates are fine, my memory is fine, and so is my pizza.",
+      "wear": "blue puffer vest",
+      "hands": "chalky gloves",
+      "spot": "snack bar"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Rink entrance mat",
+      "axis": "wear",
+      "value": "green hoodie",
+      "not": true,
+      "text": "Green hoodie threads were found along the entrance mat, but a camera timestamp shows that hoodie wearer never reached the trophy case. Green hoodie is ruled out."
+    },
+    {
+      "place": "Snack bar counter",
+      "axis": "spot",
+      "value": "snack bar",
+      "not": true,
+      "text": "A receipt stamped at the snack bar during the swap proves the snack bar visitor was never near the trophy. Snack bar is ruled out."
+    },
+    {
+      "place": "Trophy case glass",
+      "axis": "hands",
+      "value": "bare hands",
+      "text": "Smudged prints on the case show no gloves or tape, so the thief had bare hands when the trophy was lifted."
+    },
+    {
+      "place": "Lost and Found bin",
+      "axis": "wear",
+      "value": "red tracksuit",
+      "text": "A red tracksuit fibre is snagged on the rink's exit gate, so the thief was wearing a red tracksuit during the swap."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-17",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

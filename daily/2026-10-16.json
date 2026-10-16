@@ -1,0 +1,96 @@
+{
+  "title": "The Leaked Blue Ribbon Chili",
+  "intro": "Someone has spilled the secret spice blend of the county fair's prize-winning chili, and the judges want to know who talked.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "eating",
+      "label": "Eating or drinking"
+    },
+    {
+      "key": "left",
+      "label": "Left behind"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Priya",
+      "emoji": "👩‍🍳",
+      "line": "I only tasted it once. Okay, twice. Maybe three times.",
+      "hands": "yellow mustard stains",
+      "eating": "lemonade",
+      "left": "a crumpled recipe card"
+    },
+    {
+      "name": "Teddy",
+      "emoji": "🧒",
+      "line": "I came for the funnel cake. The chili was just a bonus.",
+      "hands": "blue latex gloves",
+      "eating": "funnel cake",
+      "left": "powdered sugar smudge"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I was judging the pie contest. Pie is a very serious business.",
+      "hands": "blue latex gloves",
+      "eating": "apple cider",
+      "left": "a sticky thumbprint"
+    },
+    {
+      "name": "Rosa",
+      "emoji": "👵",
+      "line": "Thirty-one years I've been at this fair. Nobody steals from me.",
+      "hands": "red chili stains",
+      "eating": "apple cider",
+      "left": "a sticky thumbprint"
+    },
+    {
+      "name": "Marlon",
+      "emoji": "🧑‍🌾",
+      "line": "My hands are clean. Ask anyone who's seen me hold a corn dog.",
+      "hands": "red chili stains",
+      "eating": "lemonade",
+      "left": "a crumpled recipe card"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Condiment station",
+      "axis": "hands",
+      "value": "yellow mustard stains",
+      "not": true,
+      "text": "Yellow mustard stains dot the napkin pile here, but they are not from the leak. Nobody who handled this mustard touched the spice blend."
+    },
+    {
+      "place": "Judges' tasting table",
+      "axis": "hands",
+      "value": "red chili stains",
+      "text": "A smear of red chili stains marks the spoon that was dipped in the secret pot. Whoever stirred it last left a bright red trail."
+    },
+    {
+      "place": "Lemonade cooler",
+      "axis": "eating",
+      "value": "lemonade",
+      "not": true,
+      "text": "Someone was clearly sipping lemonade near the pot, but a sticky cup proves it was not the leaker, who never drank a drop."
+    },
+    {
+      "place": "Supply tent trash bin",
+      "axis": "hands",
+      "value": "blue latex gloves",
+      "not": true,
+      "text": "A pair of blue latex gloves sits folded in the bin, still clean. The person who wore them did not handle the spice blend."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-16",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
