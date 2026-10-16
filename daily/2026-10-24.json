@@ -1,0 +1,96 @@
+{
+  "title": "The Fake Rosette at Pine Hollow",
+  "intro": "The campground's prize rosette for the best campfire tale has been swapped for a cheap plastic copy, and the real one is nowhere to be found.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Marta",
+      "emoji": "👩",
+      "line": "I was toasting marshmallows all evening. Ask anyone sticky.",
+      "hands": "sticky marshmallow",
+      "carry": "tin lantern",
+      "spot": "campfire"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I was reading in my tent, quietly, for hours.",
+      "hands": "ink stains",
+      "carry": "tin lantern",
+      "spot": "tent row"
+    },
+    {
+      "name": "Rudy",
+      "emoji": "🧑",
+      "line": "Yes, I was near the judges' table. So was everyone.",
+      "hands": "muddy gloves",
+      "carry": "tote bag",
+      "spot": "judges table"
+    },
+    {
+      "name": "Sol",
+      "emoji": "🧑‍🦰",
+      "line": "I was at the washroom block. Long line, sorry.",
+      "hands": "sticky marshmallow",
+      "carry": "tote bag",
+      "spot": "washroom block"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I only went to the lake to fish. Caught nothing, sadly.",
+      "hands": "muddy gloves",
+      "carry": "fishing rod",
+      "spot": "lakeside"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Lakeside dock log",
+      "axis": "spot",
+      "value": "lakeside",
+      "not": true,
+      "text": "The culprit was not spotted at the lakeside dock. Our sign-out sheet shows nobody from that bench left a trace near the water that night."
+    },
+    {
+      "place": "Tent row lantern",
+      "axis": "spot",
+      "value": "tent row",
+      "not": true,
+      "text": "The culprit was not seen wandering tent row at the time of the swap. The lantern-watch logbook shows that row stayed quiet and empty all evening."
+    },
+    {
+      "place": "Muddy boot tray",
+      "axis": "hands",
+      "value": "muddy gloves",
+      "text": "Fresh mud on the gloves of the one who swapped the rosette. Whoever reached into the case had clearly been digging in the wet garden beds."
+    },
+    {
+      "place": "Writing desk, cabin 3",
+      "axis": "hands",
+      "value": "ink stains",
+      "not": true,
+      "text": "Those inky fingerprints on the case glass don't belong to the culprit. Ink stains were left by someone who only scribbled a story, so they can be ruled out."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-24",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

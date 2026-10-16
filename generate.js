@@ -163,6 +163,7 @@ function chooseFacts(world) {
     const set = [useful[a], useful[b], useful[c], useful[d]];
     if (left(set).length !== 1) continue;
     if (new Set(set.map((f) => f.axis)).size < 2) continue;                 // not all about one trait
+    if (set.every((f) => f.not)) continue;                                   // need at least one positive clue
     if (new Set(set.map((f) => f.axis + "|" + f.value)).size < 4) continue; // no repeats
     good.push(set);
   }
