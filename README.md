@@ -35,7 +35,13 @@ Cost: about 2-5k tokens per case, roughly a cent or less on Haiku. A month is a 
 
 Once a day is started, the case is stored with the player's progress, so republishing can't change it mid-play.
 
+## Hosting
+Live at https://jjd188.github.io/daily-case/ (GitHub Pages, branch `main`, public repo `jjd188/daily-case`). Pushing to `main` publishes. Repo secret `ANTHROPIC_API_KEY` is set for the generator.
+
+`.github/workflows/generate.yml` runs weekly (Mondays 06:17 UTC) and on demand, generates the next 14 days, re-validates, and commits new `daily/*.json`. It is gitignored for now because the gh CLI token lacked the `workflow` scope; once `gh auth refresh -h github.com -s workflow` is done, remove `.github/` from `.gitignore` and push it.
+
+Pushing app changes: bump `CACHE` in `sw.js` first or players keep the old files. New `daily/` files don't need a bump (they're fetched fresh).
+
 ## Next
-- Hosting: `daily/` has to be published alongside the app, and someone has to run `generate.js` ahead of time (a scheduled task could do it weekly)
 - Capacitor wrapper (reuse `../story-rpg/android-capacitor` setup, new package id)
 - More variety: 6 suspects, 5 clues, clues that rule out two traits at once
