@@ -1,0 +1,95 @@
+{
+  "title": "The Vanished Variant Cover",
+  "intro": "The shop's most treasured variant cover, the only signed copy of issue #1, has gone missing from the locked glass case just before the big midnight release.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "travel",
+      "label": "How they travel"
+    },
+    {
+      "key": "wear",
+      "label": "Clothing"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rosa",
+      "emoji": "👩",
+      "line": "I was only in the back room sorting the new stock, honest.",
+      "hands": "sticky candy residue",
+      "travel": "on foot",
+      "wear": "yellow raincoat"
+    },
+    {
+      "name": "Priya",
+      "emoji": "🧑‍🎤",
+      "line": "I only touch comics with my gloves on, thank you very much.",
+      "hands": "white cotton gloves",
+      "travel": "bicycle",
+      "wear": "green cape"
+    },
+    {
+      "name": "Juniper",
+      "emoji": "👩‍🦰",
+      "line": "I came by bus and spent the whole ride reading manga.",
+      "hands": "white cotton gloves",
+      "travel": "city bus",
+      "wear": "red baseball cap"
+    },
+    {
+      "name": "Otto",
+      "emoji": "🧑",
+      "line": "I walked here. Slowly. Mostly to admire the window display.",
+      "hands": "ink-stained fingers",
+      "travel": "on foot",
+      "wear": "green cape"
+    },
+    {
+      "name": "Marcus",
+      "emoji": "🧔",
+      "line": "My hands are clean. Check if you like, nothing but ink on them.",
+      "hands": "ink-stained fingers",
+      "travel": "bicycle",
+      "wear": "red baseball cap"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Coat rack by the door",
+      "axis": "wear",
+      "value": "green cape",
+      "text": "A dropped strand of fabric shows the thief wore a green cape tonight. It is the only one of its kind on the rack."
+    },
+    {
+      "place": "Cash register, counter",
+      "axis": "hands",
+      "value": "white cotton gloves",
+      "not": true,
+      "text": "A pristine white cotton gloves print sits on the till, which rules out the thief wearing white cotton gloves. Whoever pulled this trick was careful with their hands."
+    },
+    {
+      "place": "Glass case, lower shelf",
+      "axis": "hands",
+      "value": "ink-stained fingers",
+      "text": "Smudged ink fingerprints cover the case latch, so the thief had ink-stained fingers. Someone was surely reading in a hurry."
+    },
+    {
+      "place": "Umbrella stand, entrance",
+      "axis": "wear",
+      "value": "yellow raincoat",
+      "not": true,
+      "text": "A dry umbrella stand and a dry spot on the floor show the thief was not in a yellow raincoat. Nobody came in dripping from the storm."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-20",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

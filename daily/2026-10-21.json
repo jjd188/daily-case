@@ -1,0 +1,95 @@
+{
+  "title": "The Sugar Sneak at Hollow Green",
+  "intro": "Every morning the village bake sale table is missing a few treats, and the tin cash box has been left unlocked. Someone has been sneaking in after dark.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "sip",
+      "label": "Snacking on"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Tobias",
+      "emoji": "🧑",
+      "line": "Cake? I'd never touch cake. Well, not the iced ones.",
+      "wear": "red bobble hat",
+      "hands": "flour dusted",
+      "sip": "apple juice"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👵",
+      "line": "I bake for the sale, I don't steal from it. Ask my scones.",
+      "wear": "floral apron",
+      "hands": "flour dusted",
+      "sip": "lemon tea"
+    },
+    {
+      "name": "Oswin",
+      "emoji": "🧔",
+      "line": "Night walks are good for the knees. Nobody saw me, which is the point.",
+      "wear": "green wellies",
+      "hands": "gloves",
+      "sip": "hot cocoa"
+    },
+    {
+      "name": "Ruth",
+      "emoji": "👩‍🦳",
+      "line": "I only came by to check the raffle. The raffle is fine.",
+      "wear": "floral apron",
+      "hands": "gloves",
+      "sip": "apple juice"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "I was home asleep by nine. My cat will confirm it, sadly, he never talks.",
+      "wear": "blue cardigan",
+      "hands": "sticky fingers",
+      "sip": "hot cocoa"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Mug by the cash box",
+      "axis": "sip",
+      "value": "hot cocoa",
+      "text": "A chocolatey mug sat beside the tin, a marshmallow skin still floating in it. Whoever sipped from it was drinking hot cocoa."
+    },
+    {
+      "place": "Hollow Green bench",
+      "axis": "wear",
+      "value": "red bobble hat",
+      "not": true,
+      "text": "A red bobble hat sat on the bench all evening, but its owner was by the duck pond the whole time. That hat was not the one seen at the table."
+    },
+    {
+      "place": "Juice carton, stall",
+      "axis": "sip",
+      "value": "apple juice",
+      "not": true,
+      "text": "An apple juice carton lay behind the stall, but it was found hours before the treats went missing. Apple juice is not what the sneak was drinking."
+    },
+    {
+      "place": "Bake sale table crumbs",
+      "axis": "hands",
+      "value": "gloves",
+      "text": "Sticky fingerprints were found on the cake tin, left by someone wearing gloves. The sneak kept their hands clean."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-21",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

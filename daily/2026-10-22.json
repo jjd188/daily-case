@@ -1,0 +1,96 @@
+{
+  "title": "The Fake Blue Flame",
+  "intro": "Just before the balloon race, the festival's golden prize cup was swapped for a cheap copy, and nobody noticed until the judges lifted it.",
+  "axes": [
+    {
+      "key": "sound",
+      "label": "Heard near"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Tobin",
+      "emoji": "🧔",
+      "line": "I only went near the judges' tent to get a cocoa. Honest.",
+      "sound": "bell ringing",
+      "hands": "paint specks",
+      "spot": "judges tent"
+    },
+    {
+      "name": "Lupe",
+      "emoji": "🧑‍🎨",
+      "line": "I was painting the festival banner, the whole time. Ask the ladder.",
+      "sound": "bell ringing",
+      "hands": "glue residue",
+      "spot": "launch field"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I was fixing my balloon's basket. Ask anyone, I was loud about it.",
+      "sound": "burner hiss",
+      "hands": "scorch marks",
+      "spot": "launch field"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑‍🦳",
+      "line": "I was up on the hay bales with my binoculars all afternoon.",
+      "sound": "crowd cheering",
+      "hands": "clean hands",
+      "spot": "hay bales"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "Balloons are my life. The prize is just shiny metal to me.",
+      "sound": "burner hiss",
+      "hands": "paint specks",
+      "spot": "food stalls"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Prize table",
+      "axis": "hands",
+      "value": "glue residue",
+      "not": true,
+      "text": "The prize table was clean: no glue residue was found on the cup's base, so the swapper's hands were free of it."
+    },
+    {
+      "place": "Clock tower steps",
+      "axis": "sound",
+      "value": "bell ringing",
+      "text": "A witness heard a bell ringing just before the swap, the kind of sound that carries across the whole field."
+    },
+    {
+      "place": "Refreshment tent",
+      "axis": "sound",
+      "value": "crowd cheering",
+      "not": true,
+      "text": "Nobody in the refreshment tent heard any crowd cheering at that moment, so the swap happened in a quiet spot."
+    },
+    {
+      "place": "Hay bale corner",
+      "axis": "spot",
+      "value": "hay bales",
+      "not": true,
+      "text": "Witnesses saw the cup swapped near the stands, but the hay bales were empty, so the culprit was not last seen there."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-22",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

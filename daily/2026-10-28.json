@@ -1,0 +1,96 @@
+{
+  "title": "The Fake Ribbon at the Science Fair",
+  "intro": "Minutes before judging, the grand prize at the school science fair has been swapped for a convincing fake.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Marcus",
+      "emoji": "🧑‍🔧",
+      "line": "I only touched the wires for my robot, I swear.",
+      "hands": "oil smudges",
+      "carry": "toolbox",
+      "spot": "robot corner"
+    },
+    {
+      "name": "Omar",
+      "emoji": "🧑‍🎓",
+      "line": "Judges love a good trophy photo, so I took a few.",
+      "hands": "chalk dust",
+      "carry": "camera",
+      "spot": "judges' table"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🔬",
+      "line": "My volcano is bubbling, so I stayed right by it.",
+      "hands": "chalk dust",
+      "carry": "clipboard",
+      "spot": "volcano table"
+    },
+    {
+      "name": "Ruby",
+      "emoji": "👩‍🎤",
+      "line": "Me? I was checking the snack table. Ask anyone.",
+      "hands": "sticky fingers",
+      "carry": "camera",
+      "spot": "snack table"
+    },
+    {
+      "name": "Lena",
+      "emoji": "👧",
+      "line": "I was in the gym, practicing my cheer routine.",
+      "hands": "clean hands",
+      "carry": "clipboard",
+      "spot": "gym"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Volcano table",
+      "axis": "spot",
+      "value": "volcano table",
+      "not": true,
+      "text": "The baking-soda foam is still bubbling on the volcano table, and the judges agree the culprit was nowhere near it, so they were not last seen there."
+    },
+    {
+      "place": "Supply closet door",
+      "axis": "carry",
+      "value": "toolbox",
+      "not": true,
+      "text": "The toolbox still sits untouched on its shelf, and the custodian confirms its owner was never near it, so the culprit was not carrying a toolbox."
+    },
+    {
+      "place": "Judges' sign-in desk",
+      "axis": "hands",
+      "value": "sticky fingers",
+      "not": true,
+      "text": "A smudged sticky-note sign-in sheet shows the culprit's hands were clean that morning, so they were definitely not the sticky-fingers type, who left glue on everything."
+    },
+    {
+      "place": "Hallway by trophy case",
+      "axis": "carry",
+      "value": "camera",
+      "text": "A witness saw someone hurrying past with a camera slung over one shoulder, clicking away and clearly carrying a camera, not anything else."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-28",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

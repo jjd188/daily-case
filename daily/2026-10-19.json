@@ -1,0 +1,95 @@
+{
+  "title": "The Switched Trophy at Platform Nine",
+  "intro": "The gleaming Golden Whistle, the prize for the station's model train contest, has been swapped for a painted fake inside the waiting room.",
+  "axes": [
+    {
+      "key": "travel",
+      "label": "Travelling by"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Wren",
+      "emoji": "🧑",
+      "line": "Coffee first, questions later. Always.",
+      "travel": "night sleeper",
+      "hands": "coffee-stained cuffs",
+      "spot": "waiting room"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I was checking the departure board all morning.",
+      "travel": "morning express",
+      "hands": "gloved hands",
+      "spot": "platform bench"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "My train was late, so I sat and read.",
+      "travel": "local shuttle",
+      "hands": "gloved hands",
+      "spot": "waiting room"
+    },
+    {
+      "name": "Mara",
+      "emoji": "🧕",
+      "line": "I only came to see the trains, honestly.",
+      "travel": "morning express",
+      "hands": "paint on fingers",
+      "spot": "model shop"
+    },
+    {
+      "name": "Rudy",
+      "emoji": "🧑‍🔧",
+      "line": "Ask the ticket office, I was busy there.",
+      "travel": "local shuttle",
+      "hands": "paint on fingers",
+      "spot": "ticket office"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Platform Nine bench",
+      "axis": "travel",
+      "value": "local shuttle",
+      "text": "A commuter's ticket stub shows the culprit arrived on the local shuttle, so the trophy thief came in on that line and not by express."
+    },
+    {
+      "place": "Ticket office queue",
+      "axis": "spot",
+      "value": "ticket office",
+      "not": true,
+      "text": "The clerk's camera shows the culprit was not at the ticket office counter at the time of the swap, clearing that spot entirely."
+    },
+    {
+      "place": "Waiting room sink",
+      "axis": "hands",
+      "value": "gloved hands",
+      "text": "Fine fibres of a glove were caught on the tap, showing the culprit worked with gloved hands and left no fingerprints on the trophy."
+    },
+    {
+      "place": "Model shop window",
+      "axis": "spot",
+      "value": "model shop",
+      "not": true,
+      "text": "The shopkeeper's log proves the culprit was never inside the model shop that afternoon, so that shop can be crossed off the list."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-19",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

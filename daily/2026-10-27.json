@@ -1,0 +1,95 @@
+{
+  "title": "The Midnight Muddle at Paws Fair",
+  "intro": "Every morning the adoption fair's kennels are found a little messier, and someone has been sneaking in after dark to play with the puppies.",
+  "axes": [
+    {
+      "key": "leftover",
+      "label": "Left behind"
+    },
+    {
+      "key": "hat",
+      "label": "Hair or hat"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Grace",
+      "emoji": "👩‍🦰",
+      "line": "I was in the parking lot, honest.",
+      "leftover": "chewed rope toy",
+      "hat": "yellow headband",
+      "spot": "front gate"
+    },
+    {
+      "name": "Tomas",
+      "emoji": "🧔",
+      "line": "Night shifts are long. I needed a walk.",
+      "leftover": "chewed rope toy",
+      "hat": "bald, shiny",
+      "spot": "front gate"
+    },
+    {
+      "name": "Maya",
+      "emoji": "👩",
+      "line": "I only came to look at the bunnies, I swear.",
+      "leftover": "muddy paw print",
+      "hat": "red beanie",
+      "spot": "puppy pen"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧",
+      "line": "I was reading by the cat tent all evening.",
+      "leftover": "muddy paw print",
+      "hat": "yellow headband",
+      "spot": "cat tent"
+    },
+    {
+      "name": "Leo",
+      "emoji": "🧑",
+      "line": "Dogs don't like me. Ask any of them.",
+      "leftover": "feather from a pillow",
+      "hat": "red beanie",
+      "spot": "cat tent"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Coat hook by door",
+      "axis": "hat",
+      "value": "red beanie",
+      "text": "A red beanie was caught on the coat hook near the door. The night visitor was wearing a red beanie when they slipped in."
+    },
+    {
+      "place": "Bald-cap photo booth",
+      "axis": "hat",
+      "value": "bald, shiny",
+      "not": true,
+      "text": "Nobody with a bald, shiny head was in the booth at the time. The visitor could not have been someone bald and shiny, so that look is ruled out."
+    },
+    {
+      "place": "Cat tent entrance",
+      "axis": "spot",
+      "value": "cat tent",
+      "not": true,
+      "text": "The sign-in sheet shows the cat tent was empty all night. The culprit was not in the cat tent, so that spot is ruled out."
+    },
+    {
+      "place": "Puppy pen gate",
+      "axis": "leftover",
+      "value": "muddy paw print",
+      "text": "A muddy paw print was left on the gate latch. Whoever came through here had a muddy paw print on their boot, not a clean one."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-27",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

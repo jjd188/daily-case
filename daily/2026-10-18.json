@@ -1,0 +1,96 @@
+{
+  "title": "The Mixed-Up Bingo Balls",
+  "intro": "Someone swapped the bingo cage balls for a set of squeaky rubber ducks, and the whole Sunset Lounge bingo night fell apart in a fit of honking.",
+  "axes": [
+    {
+      "key": "sound",
+      "label": "Sound"
+    },
+    {
+      "key": "smell",
+      "label": "Smell"
+    },
+    {
+      "key": "travel",
+      "label": "How they travel"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Walter",
+      "emoji": "🧓",
+      "line": "I was at the piano, playing a very loud tune.",
+      "sound": "jingling keys",
+      "smell": "lavender",
+      "travel": "cane"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👵",
+      "line": "I was dozing by the window, dear. Ask the cat.",
+      "sound": "soft humming",
+      "smell": "lavender",
+      "travel": "walker"
+    },
+    {
+      "name": "Ruth",
+      "emoji": "👩‍🦳",
+      "line": "Rubber ducks? I'd never be so silly. Well, maybe once.",
+      "sound": "soft humming",
+      "smell": "peppermint",
+      "travel": "wheelchair"
+    },
+    {
+      "name": "Harold",
+      "emoji": "👴",
+      "line": "I don't squeak. I haven't squeaked since 1962.",
+      "sound": "squeaky shoes",
+      "smell": "peppermint",
+      "travel": "walker"
+    },
+    {
+      "name": "Dot",
+      "emoji": "👩",
+      "line": "I was only tidying the prize table, I swear.",
+      "sound": "squeaky shoes",
+      "smell": "lavender",
+      "travel": "cane"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Near the lounge doorway",
+      "axis": "travel",
+      "value": "walker",
+      "not": true,
+      "text": "A walker's metal legs left no dents in the carpet here, so the walker was not the one who rolled through. Look elsewhere for the traveler."
+    },
+    {
+      "place": "Beside the potted fern",
+      "axis": "travel",
+      "value": "cane",
+      "not": true,
+      "text": "Fresh cane-tip marks are missing from the soft dirt by this fern, so a cane was not used to get around. The mover was on foot."
+    },
+    {
+      "place": "Under the bingo table",
+      "axis": "sound",
+      "value": "soft humming",
+      "text": "A trail of soft humming hung in the air here, the kind of tuneless tune someone hums while sneaking about. Nobody's shoes were squeaking."
+    },
+    {
+      "place": "By the snack cart",
+      "axis": "sound",
+      "value": "squeaky shoes",
+      "not": true,
+      "text": "Clean footprints show that squeaky shoes did not walk this way. Whoever came here left no squeak at all."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-18",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

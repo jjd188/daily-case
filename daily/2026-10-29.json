@@ -1,0 +1,96 @@
+{
+  "title": "The Soggy Screen Surprise",
+  "intro": "Right before the big rooftop movie, someone sprayed the projector screen with water balloons and the film reel vanished.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "foot",
+      "label": "Footwear"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Ruby",
+      "emoji": "👩",
+      "line": "I was up on the ladder fixing the lights.",
+      "wear": "yellow raincoat",
+      "carry": "film canister",
+      "foot": "muddy boots"
+    },
+    {
+      "name": "Omar",
+      "emoji": "🧑‍🎤",
+      "line": "Bold of you to accuse me. I was in the snack line.",
+      "wear": "green hoodie",
+      "carry": "water bottle",
+      "foot": "muddy boots"
+    },
+    {
+      "name": "Maya",
+      "emoji": "👧",
+      "line": "I was busy setting out the beanbags, honest!",
+      "wear": "yellow raincoat",
+      "carry": "popcorn bucket",
+      "foot": "red sneakers"
+    },
+    {
+      "name": "Priya",
+      "emoji": "🧑‍🎓",
+      "line": "Whoever did it has a serious sense of humour.",
+      "wear": "striped scarf",
+      "carry": "film canister",
+      "foot": "red sneakers"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧒",
+      "line": "Water balloons? I only brought snacks, thanks.",
+      "wear": "green hoodie",
+      "carry": "popcorn bucket",
+      "foot": "red sneakers"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Snack stand counter",
+      "axis": "carry",
+      "value": "popcorn bucket",
+      "not": true,
+      "text": "A popcorn bucket was found sitting untouched at the snack stand, and its owner has a clean alibi. The popcorn bucket carrier is not the culprit."
+    },
+    {
+      "place": "Water balloon bin",
+      "axis": "foot",
+      "value": "muddy boots",
+      "text": "Muddy boot prints lead from the balloon bin toward the screen, matching the culprit's footwear. The culprit is the one wearing muddy boots."
+    },
+    {
+      "place": "Rooftop ladder rail",
+      "axis": "wear",
+      "value": "yellow raincoat",
+      "not": true,
+      "text": "A smear of drying mud on the ladder rail shows the culprit wore muddy boots. A yellow raincoat would have left no such trace, so the raincoat wearer is ruled out."
+    },
+    {
+      "place": "Projector booth floor",
+      "axis": "carry",
+      "value": "film canister",
+      "not": true,
+      "text": "The film canister is still on its shelf, dry and unscratched, proving the canister carrier was never near the screen. The film canister is not the culprit."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-29",
+    "model": "claude-haiku-5-5",
+    "attempts": 3,
+    "par": 2
+  }
+}

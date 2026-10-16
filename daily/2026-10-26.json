@@ -1,0 +1,95 @@
+{
+  "title": "The Hidden Trophy Ballad",
+  "intro": "Minutes before the talent show, the school's beloved silver microphone has vanished from the auditorium stage.",
+  "axes": [
+    {
+      "key": "arrival",
+      "label": "Arrived"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "drink",
+      "label": "Drinking"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Priya",
+      "emoji": "👩‍🎤",
+      "line": "Ask anyone, I was in the green room all morning.",
+      "arrival": "early",
+      "spot": "green room",
+      "drink": "cocoa"
+    },
+    {
+      "name": "Mira",
+      "emoji": "🧑‍🎤",
+      "line": "I'm rehearsing my song, not hiding anything, thank you.",
+      "arrival": "early",
+      "spot": "stage",
+      "drink": "lemonade"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑‍🎓",
+      "line": "I came in late, only because my bike got a flat tire.",
+      "arrival": "late",
+      "spot": "hallway",
+      "drink": "lemonade"
+    },
+    {
+      "name": "Owen",
+      "emoji": "🧑‍🦱",
+      "line": "I only stepped out to refill my water bottle.",
+      "arrival": "late",
+      "spot": "hallway",
+      "drink": "water"
+    },
+    {
+      "name": "Lila",
+      "emoji": "👧",
+      "line": "Microphones are way too heavy for me to carry around.",
+      "arrival": "early",
+      "spot": "green room",
+      "drink": "water"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Main Hallway Bench",
+      "axis": "spot",
+      "value": "hallway",
+      "text": "A witness saw the culprit last of all, lingering in the hallway just outside the auditorium doors, right before the mic vanished."
+    },
+    {
+      "place": "Cocoa Cart Lid",
+      "axis": "drink",
+      "value": "cocoa",
+      "not": true,
+      "text": "The cocoa cart stayed spotless and untouched, so the culprit was not the one who grabbed a cup of cocoa before the show."
+    },
+    {
+      "place": "Stage Door Sign-In",
+      "axis": "arrival",
+      "value": "early",
+      "not": true,
+      "text": "The sign-in sheet shows the culprit did not arrive early; they walked in only after the rest of the crowd had settled in."
+    },
+    {
+      "place": "Snack Table Cup",
+      "axis": "drink",
+      "value": "lemonade",
+      "text": "A sticky cup on the snack table smells of lemonade, and the culprit was the only one seen sipping it near the stage."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-26",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

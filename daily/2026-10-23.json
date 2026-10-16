@@ -1,0 +1,95 @@
+{
+  "title": "The Night Visitor at the Museum",
+  "intro": "Someone keeps slipping into the museum after closing time, and the night guard has noticed small things moved around in the morning.",
+  "axes": [
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "acc",
+      "label": "Accessory"
+    },
+    {
+      "key": "foot",
+      "label": "Footwear"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Lena",
+      "emoji": "👩🏾",
+      "line": "I was sketching the armor in the castle room, all night.",
+      "spot": "castle room",
+      "acc": "gold watch",
+      "foot": "rain boots"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑🏻‍🦱",
+      "line": "Ancient pottery is my calling. Nothing else, ever.",
+      "spot": "pottery room",
+      "acc": "round glasses",
+      "foot": "rain boots"
+    },
+    {
+      "name": "Marcy",
+      "emoji": "👩‍🦰",
+      "line": "I only came to see the dinosaur bones. Lovely bones.",
+      "spot": "dinosaur hall",
+      "acc": "red scarf",
+      "foot": "sneakers"
+    },
+    {
+      "name": "Otto",
+      "emoji": "🧔",
+      "line": "I was in the gift shop counting postcards, very carefully.",
+      "spot": "gift shop",
+      "acc": "round glasses",
+      "foot": "sneakers"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧🏽",
+      "line": "The night guard waved at me. He can vouch for that.",
+      "spot": "gift shop",
+      "acc": "red scarf",
+      "foot": "rain boots"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Pottery room door",
+      "axis": "spot",
+      "value": "pottery room",
+      "not": true,
+      "text": "The security log shows the culprit was never near the pottery room that night, so that room can be crossed off the list."
+    },
+    {
+      "place": "Coat rack by the lobby",
+      "axis": "acc",
+      "value": "round glasses",
+      "text": "A pair of round glasses was left hanging on the coat rack, a clue that the culprit wore round glasses that evening."
+    },
+    {
+      "place": "Gift shop counter",
+      "axis": "spot",
+      "value": "gift shop",
+      "text": "A receipt-sized note was found by the register: the culprit was last seen heading into the gift shop after closing time."
+    },
+    {
+      "place": "Scarf hook, staff room",
+      "axis": "acc",
+      "value": "red scarf",
+      "not": true,
+      "text": "The red scarf hanging here was checked against the footage, and the culprit was not wearing a red scarf, so it can be ruled out."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-23",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

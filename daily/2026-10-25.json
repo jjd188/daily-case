@@ -1,0 +1,96 @@
+{
+  "title": "The Spilled Ink Prank",
+  "intro": "During the poetry open mic at the cozy bookstore cafe, someone swapped every bottle of ink in the event's calligraphy station, and the reading has descended into chaos.",
+  "axes": [
+    {
+      "key": "smell",
+      "label": "Smell"
+    },
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rowan",
+      "emoji": "🧑‍🦰",
+      "line": "I was in the back room, reading the new mystery.",
+      "smell": "old book dust",
+      "wear": "paint-splattered apron",
+      "spot": "back room"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "Ink? I'd never waste a good pen on a prank.",
+      "smell": "peppermint tea",
+      "wear": "green cardigan",
+      "spot": "poetry corner"
+    },
+    {
+      "name": "Maren",
+      "emoji": "🧑‍🎨",
+      "line": "I only touch pencils. Pencils are civilized.",
+      "smell": "peppermint tea",
+      "wear": "paint-splattered apron",
+      "spot": "poetry corner"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I was restocking the cookies. Ask the cookies.",
+      "smell": "cinnamon",
+      "wear": "green cardigan",
+      "spot": "pastry counter"
+    },
+    {
+      "name": "Sol",
+      "emoji": "🧑‍🦳",
+      "line": "Who, me? I was busy looking very innocent.",
+      "smell": "cinnamon",
+      "wear": "striped scarf",
+      "spot": "back room"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Poetry corner",
+      "axis": "spot",
+      "value": "poetry corner",
+      "text": "Patrons remember the culprit was last seen in the poetry corner, hunched over a notebook right before the bottles went missing."
+    },
+    {
+      "place": "Calligraphy station",
+      "axis": "smell",
+      "value": "cinnamon",
+      "not": true,
+      "text": "A sniff of the spilled ink shows the culprit is not cinnamon. Whoever did this smelled of something else entirely, so the cinnamon crowd is off the hook."
+    },
+    {
+      "place": "Coat rack by the door",
+      "axis": "wear",
+      "value": "paint-splattered apron",
+      "not": true,
+      "text": "A dropped thread on the coat rack proves the culprit is not wearing a paint-splattered apron. Whoever tipped those bottles had a clean, plain outfit underneath."
+    },
+    {
+      "place": "Pastry counter",
+      "axis": "spot",
+      "value": "pastry counter",
+      "not": true,
+      "text": "A cashier swears the culprit was not at the pastry counter at the time of the swap. Crumbs were ruled out, and the cookies are innocent."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-25",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
