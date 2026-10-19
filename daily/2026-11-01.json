@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Marshmallow Stick Trophy",
+  "intro": "The campground's prized golden lantern has disappeared from the picnic table just before the campfire awards.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Milo",
+      "emoji": "🧒",
+      "line": "I was roasting marshmallows the whole time. Ask anyone.",
+      "wear": "red bandana",
+      "carry": "marshmallow bag",
+      "spot": "fire pit"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑",
+      "line": "I was fast asleep in my tent, honest.",
+      "wear": "striped sweater",
+      "carry": "backpack",
+      "spot": "tent row"
+    },
+    {
+      "name": "Rosa",
+      "emoji": "👩",
+      "line": "Lantern? I haven't touched a lantern all week.",
+      "wear": "green poncho",
+      "carry": "marshmallow bag",
+      "spot": "fire pit"
+    },
+    {
+      "name": "Otto",
+      "emoji": "🧔",
+      "line": "I went for a walk to clear my head, that's all.",
+      "wear": "green poncho",
+      "carry": "flashlight",
+      "spot": "trail head"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧",
+      "line": "I was only out looking for my lost flip-flop.",
+      "wear": "red bandana",
+      "carry": "flashlight",
+      "spot": "lake shore"
+    }
+  ],
+  "culprit": 4,
+  "clues": [
+    {
+      "place": "Muddy picnic footprints",
+      "axis": "wear",
+      "value": "green poncho",
+      "not": true,
+      "text": "Muddy footprints lead away from the table, but they are not from a green poncho wearer, whose boots were spotless all evening."
+    },
+    {
+      "place": "Trail head, dropped item",
+      "axis": "carry",
+      "value": "flashlight",
+      "text": "A small flashlight beam was spotted bobbing toward the woods; the one carrying a flashlight is the lantern's likely taker."
+    },
+    {
+      "place": "Clothesline by the tents",
+      "axis": "wear",
+      "value": "striped sweater",
+      "not": true,
+      "text": "A striped sweater hangs dry on the line, so its owner was never out on the damp grass chasing the lantern."
+    },
+    {
+      "place": "Fire pit, ash bucket",
+      "axis": "spot",
+      "value": "fire pit",
+      "not": true,
+      "text": "Someone who was lingering by the fire pit at the lantern's vanishing time has a solid alibi, since they were roasting marshmallows the whole while."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-01",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

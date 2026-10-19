@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Script Pages",
+  "intro": "Tomorrow's surprise plot twin of the community theater's spring musical has gone missing from the prop room, and someone has been whispering the ending around town.",
+  "axes": [
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "wear",
+      "label": "Accessory"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rafi",
+      "emoji": "🧑‍🔧",
+      "line": "I fixed the lights and then I went home. That is my whole night.",
+      "spot": "stage lights",
+      "wear": "round glasses",
+      "hands": "gloves"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩‍🎤",
+      "line": "I was in the wings all evening, humming my solo. Ask anyone.",
+      "spot": "wings",
+      "wear": "red scarf",
+      "hands": "ink stains"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑‍🎨",
+      "line": "Paint night at the back door. I never touch paperwork, I promise.",
+      "spot": "paint room",
+      "wear": "red scarf",
+      "hands": "paint stains"
+    },
+    {
+      "name": "Juniper",
+      "emoji": "🧝",
+      "line": "I was rehearsing my dance in the hall. Alone, sadly, with no witnesses.",
+      "spot": "hallway",
+      "wear": "feather hairclip",
+      "hands": "gloves"
+    },
+    {
+      "name": "Bea",
+      "emoji": "👵",
+      "line": "I sell tickets, dear. I have not stepped near the prop room in a week.",
+      "spot": "box office",
+      "wear": "round glasses",
+      "hands": "ink stains"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Coat rack by the door",
+      "axis": "wear",
+      "value": "red scarf",
+      "text": "A dropped item confirms the culprit wore a red scarf that evening, a bright thread caught on the hook as they hurried out."
+    },
+    {
+      "place": "Lighting booth",
+      "axis": "spot",
+      "value": "stage lights",
+      "not": true,
+      "text": "A sign-in sheet shows the culprit was NOT last seen near the stage lights, since they were signed out of the booth well before the pages vanished."
+    },
+    {
+      "place": "Dressing room mirror",
+      "axis": "wear",
+      "value": "round glasses",
+      "not": true,
+      "text": "A smudged note on the mirror says the culprit was NOT wearing round glasses; the only lenses left behind are square and belong to someone else."
+    },
+    {
+      "place": "Paint table",
+      "axis": "hands",
+      "value": "paint stains",
+      "not": true,
+      "text": "Clean fingerprints on the script pages show the culprit's hands were NOT stained with paint, so they never touched the wet scenery."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-30",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
