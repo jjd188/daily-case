@@ -1,0 +1,96 @@
+{
+  "title": "The Fake Prize at Skyfest",
+  "intro": "At the hot-air balloon festival, the golden trophy for Best Balloon has been swapped for a painted plaster copy just before the judges arrive.",
+  "axes": [
+    {
+      "key": "footwear",
+      "label": "Footwear"
+    },
+    {
+      "key": "hat",
+      "label": "Hat or hair"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Lena",
+      "emoji": "👱‍♀️",
+      "line": "I was fixing a rope. Ask the rigging crew.",
+      "footwear": "brown boots",
+      "hat": "bandana",
+      "spot": "judges tent"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧔",
+      "line": "The judges' tent? Never been near it.",
+      "footwear": "brown boots",
+      "hat": "green bobble hat",
+      "spot": "judges tent"
+    },
+    {
+      "name": "Marta",
+      "emoji": "👩",
+      "line": "I was checking my burner, nothing else!",
+      "footwear": "red wellies",
+      "hat": "green bobble hat",
+      "spot": "launch field"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑‍🦳",
+      "line": "Ask me about wind speeds, I'll talk all day.",
+      "footwear": "white trainers",
+      "hat": "sun visor",
+      "spot": "launch field"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I only came for the candyfloss, honest.",
+      "footwear": "red wellies",
+      "hat": "sun visor",
+      "spot": "candyfloss stall"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Candyfloss stall",
+      "axis": "spot",
+      "value": "candyfloss stall",
+      "not": true,
+      "text": "The candyfloss seller swears the culprit never came near his stall. Sticky evidence suggests they were not the one at the candyfloss stall."
+    },
+    {
+      "place": "Judges' tent entrance",
+      "axis": "footwear",
+      "value": "white trainers",
+      "not": true,
+      "text": "A witness saw someone in white trainers and ruled them out fast: the culprit is not the one in white trainers, whose shoes were spotless all morning."
+    },
+    {
+      "place": "Lost property box",
+      "axis": "hat",
+      "value": "bandana",
+      "not": true,
+      "text": "A bandana was found tangled on a tent peg, but its owner was seen at the rides all afternoon. The culprit is not the bandana wearer."
+    },
+    {
+      "place": "Muddy launch field",
+      "axis": "footwear",
+      "value": "brown boots",
+      "text": "Fresh boot prints in the mud led straight to the trophy tent. The culprit wore brown boots, and the tread was unmistakable."
+    }
+  ],
+  "meta": {
+    "date": "2026-10-31",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

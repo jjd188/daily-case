@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Rubber Duck",
+  "intro": "Mo's lucky rubber duck, the one that has sat on the common room TV for three years, has disappeared just before the dorm's big bath-night toast.",
+  "axes": [
+    {
+      "key": "foot",
+      "label": "Footwear"
+    },
+    {
+      "key": "sip",
+      "label": "Drinking"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rosa",
+      "emoji": "👧",
+      "line": "Ducks are for bathtubs, not for stealing.",
+      "foot": "fuzzy slippers",
+      "sip": "fizzy soda",
+      "spot": "common room"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑",
+      "line": "I was asleep. Ask my snoring neighbor.",
+      "foot": "sneakers",
+      "sip": "fizzy soda",
+      "spot": "hallway"
+    },
+    {
+      "name": "June",
+      "emoji": "👩",
+      "line": "I was on the couch the whole evening, honest.",
+      "foot": "rain boots",
+      "sip": "bubble tea",
+      "spot": "kitchen"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🎓",
+      "line": "I only came down for the popcorn, I swear.",
+      "foot": "fuzzy slippers",
+      "sip": "hot cocoa",
+      "spot": "kitchen"
+    },
+    {
+      "name": "Kai",
+      "emoji": "🧑‍🎤",
+      "line": "Me? I was busy with my headphones on.",
+      "foot": "sneakers",
+      "sip": "bubble tea",
+      "spot": "common room"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Mug on the sink",
+      "axis": "sip",
+      "value": "hot cocoa",
+      "not": true,
+      "text": "A mug still steaming in the sink shows hot cocoa was made here, so the culprit is definitely not the hot cocoa drinker."
+    },
+    {
+      "place": "Hallway sign-in sheet",
+      "axis": "spot",
+      "value": "common room",
+      "not": true,
+      "text": "The sign-in sheet at the common room door proves the duck was not last seen there, since its visitor timed out long before."
+    },
+    {
+      "place": "Fridge door",
+      "axis": "sip",
+      "value": "fizzy soda",
+      "text": "A fizzy soda can was left sweating on the counter, and the culprit is the one who drinks fizzy soda."
+    },
+    {
+      "place": "Kitchen bin",
+      "axis": "spot",
+      "value": "kitchen",
+      "not": true,
+      "text": "A receipt from the kitchen shows someone was seen there at the time, so the culprit was not last seen in the kitchen."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-07",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

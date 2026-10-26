@@ -1,0 +1,95 @@
+{
+  "title": "The Bingo Hall Recipe Leak",
+  "intro": "Someone has leaked Edna's secret pound cake recipe during the retirement home's bingo night, and the card in her handbag is now missing.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "arrived",
+      "label": "Arrived"
+    },
+    {
+      "key": "clothing",
+      "label": "Clothing"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Walter",
+      "emoji": "🧓",
+      "line": "I came late because my hip is a grumpy old thing.",
+      "hands": "flour dusted",
+      "arrived": "late",
+      "clothing": "red plaid shirt"
+    },
+    {
+      "name": "Harold",
+      "emoji": "👴",
+      "line": "I was at the snack table the whole time, I swear.",
+      "hands": "ink-stained fingers",
+      "arrived": "early",
+      "clothing": "tan sweater vest"
+    },
+    {
+      "name": "Rosie",
+      "emoji": "👩",
+      "line": "Bingo is my life, and I am very lucky at it.",
+      "hands": "ink-stained fingers",
+      "arrived": "late",
+      "clothing": "tan sweater vest"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👵",
+      "line": "I only ever dab, dear. Never a drop on my hands.",
+      "hands": "flour dusted",
+      "arrived": "early",
+      "clothing": "lavender cardigan"
+    },
+    {
+      "name": "Gloria",
+      "emoji": "👩‍🦳",
+      "line": "My recipe? Never heard of it. Now, B-7, anyone?",
+      "hands": "clean and bare",
+      "arrived": "late",
+      "clothing": "lavender cardigan"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Bingo cage handle",
+      "axis": "hands",
+      "value": "ink-stained fingers",
+      "text": "A smudge of blue ink on the cage handle shows the culprit had ink-stained fingers from handling the card."
+    },
+    {
+      "place": "Coat rack by the door",
+      "axis": "clothing",
+      "value": "lavender cardigan",
+      "not": true,
+      "text": "A lavender cardigan hangs untouched here, so the culprit is not the one wearing that cardigan tonight."
+    },
+    {
+      "place": "Doorway camera log",
+      "axis": "arrived",
+      "value": "late",
+      "not": true,
+      "text": "The door log proves the culprit was not late; they were already seated before the second game of the night began."
+    },
+    {
+      "place": "Sign-in clipboard",
+      "axis": "arrived",
+      "value": "early",
+      "text": "The sign-in sheet shows the culprit arrived early, scribbling their name before the first caller had even warmed up."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-04",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "title": "The Museum Mix-Up Prank",
+  "intro": "After hours at the museum, someone swapped the gala's fancy display labels and painted a mustache on the star exhibit, ruining the opening night reveal.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Ada",
+      "emoji": "🧑‍💼",
+      "line": "Labels were perfect when I left. Perfect, I tell you.",
+      "wear": "blue overalls",
+      "carry": "clipboard",
+      "spot": "gift shop"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑‍🔧",
+      "line": "Fixing the lights all evening. Nobody noticed me, as usual.",
+      "wear": "blue overalls",
+      "carry": "toolbox",
+      "spot": "east wing"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I was checking the guest list in the gift shop. Twice.",
+      "wear": "paint-splattered smock",
+      "carry": "clipboard",
+      "spot": "gift shop"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩‍🎨",
+      "line": "I was sketching the dinosaurs. Ask anyone who was there.",
+      "wear": "paint-splattered smock",
+      "carry": "sketchbook",
+      "spot": "dinosaur hall"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧔",
+      "line": "Gala? I only came for the free cookies, honestly.",
+      "wear": "red bow tie",
+      "carry": "tote bag",
+      "spot": "east wing"
+    }
+  ],
+  "culprit": 4,
+  "clues": [
+    {
+      "place": "Gala sign-in desk",
+      "axis": "carry",
+      "value": "clipboard",
+      "not": true,
+      "text": "The culprit is not the one holding a clipboard, because the guest clipboard was still on the desk with its sign-in sheet untouched all evening."
+    },
+    {
+      "place": "Coat check ledger",
+      "axis": "wear",
+      "value": "paint-splattered smock",
+      "not": true,
+      "text": "The culprit is not the one in the paint-splattered smock, as the coat check shows that smock was returned clean and hung up before the mustache appeared."
+    },
+    {
+      "place": "Tool closet",
+      "axis": "carry",
+      "value": "toolbox",
+      "not": true,
+      "text": "The culprit is not the one carrying a toolbox, since the toolbox never left the closet and was found with every tray still latched shut."
+    },
+    {
+      "place": "Security camera log",
+      "axis": "spot",
+      "value": "east wing",
+      "text": "The culprit was last seen heading into the east wing, where the camera caught a figure slipping past the velvet rope just before the lights went down."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-06",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

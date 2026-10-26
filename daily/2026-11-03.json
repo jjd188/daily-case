@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Honey Jar",
+  "intro": "The prize-winning jar of wildflower honey has disappeared from the farmers market's judging table just before the ribbon ceremony.",
+  "axes": [
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "sip",
+      "label": "Eating or drinking"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Gus",
+      "emoji": "🧑‍🦱",
+      "line": "I only came for the kettle corn, I swear.",
+      "carry": "wicker basket",
+      "spot": "kettle corn cart",
+      "sip": "iced tea"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "Honey? Sweet of you to ask, but I was at the bread stall.",
+      "carry": "canvas tote",
+      "spot": "bread stall",
+      "sip": "lemonade"
+    },
+    {
+      "name": "Marta",
+      "emoji": "👩‍🌾",
+      "line": "I've been selling tomatoes all morning. Ask anyone.",
+      "carry": "wicker basket",
+      "spot": "tomato stall",
+      "sip": "iced tea"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧔",
+      "line": "I was judging the pies. Strictly professional.",
+      "carry": "clipboard",
+      "spot": "judging table",
+      "sip": "lemonade"
+    },
+    {
+      "name": "Lena",
+      "emoji": "🧑",
+      "line": "Bees and I get along fine, thank you very much.",
+      "carry": "canvas tote",
+      "spot": "judging table",
+      "sip": "coffee"
+    }
+  ],
+  "culprit": 4,
+  "clues": [
+    {
+      "place": "Judging table, north end",
+      "axis": "carry",
+      "value": "canvas tote",
+      "text": "A canvas tote bag was left dangling from the table's edge, its handles still swaying. Whoever hurried off was carrying one on their shoulder."
+    },
+    {
+      "place": "Lemonade stand, napkin",
+      "axis": "sip",
+      "value": "lemonade",
+      "not": true,
+      "text": "A napkin with lemonade stains was found, but it was flattened by a different sort of hand. Whoever took the honey did not sip lemonade while doing it."
+    },
+    {
+      "place": "Bread stall, awning",
+      "axis": "spot",
+      "value": "bread stall",
+      "not": true,
+      "text": "The baker swears no one from the bread stall was near the judging table at the crucial moment. Their cinnamon rolls were in the oven, and so was the alibi."
+    },
+    {
+      "place": "Tea cart, lemon slices",
+      "axis": "sip",
+      "value": "iced tea",
+      "not": true,
+      "text": "Every cup of iced tea sold this morning is accounted for, with lemon slices still floating on top. The iced tea seller had nothing to do with the missing jar."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-03",
+    "model": "claude-haiku-5-5",
+    "attempts": 3,
+    "par": 2
+  }
+}

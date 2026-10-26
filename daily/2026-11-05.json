@@ -1,0 +1,95 @@
+{
+  "title": "The Lost Lantern Locket",
+  "intro": "A silver locket with a tiny glowing lantern charm has vanished from the lost-property desk at Harbor Street station, just minutes before its owner came to collect it.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "drink",
+      "label": "Drinking"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Wren",
+      "emoji": "🧑‍🎨",
+      "line": "Sketching the platform clock all morning. Check my sketchbook.",
+      "hands": "ink-stained fingers",
+      "drink": "iced tea",
+      "spot": "platform clock"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I was napping on the bench by the clock. Ask the pigeons.",
+      "hands": "gloved hands",
+      "drink": "sparkling lemonade",
+      "spot": "waiting bench"
+    },
+    {
+      "name": "Rafe",
+      "emoji": "🧑‍🦰",
+      "line": "I never touch lost things. Bad luck, everyone knows that.",
+      "hands": "gloved hands",
+      "drink": "hot cocoa",
+      "spot": "lost-property desk"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I only went near the desk to ask about my umbrella.",
+      "hands": "ink-stained fingers",
+      "drink": "sparkling lemonade",
+      "spot": "lost-property desk"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩🏽‍✈️",
+      "line": "My hands? Spotless, I promise. I just came for the 8:15.",
+      "hands": "ink-stained fingers",
+      "drink": "hot cocoa",
+      "spot": "ticket queue"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Lost-property desk",
+      "axis": "spot",
+      "value": "lost-property desk",
+      "text": "Fresh fingerprints on the lost-property desk show the culprit was last seen standing right there, beside the open drawer."
+    },
+    {
+      "place": "Snack cart by the door",
+      "axis": "drink",
+      "value": "sparkling lemonade",
+      "text": "A sticky sparkling lemonade cup was found by the snack cart, and its fizzy trail leads straight to the suspect's drink choice."
+    },
+    {
+      "place": "Waiting bench",
+      "axis": "spot",
+      "value": "waiting bench",
+      "not": true,
+      "text": "The waiting bench still holds a neat pile of umbrellas, and the culprit is not the person who sat there, since the bench cushion stayed perfectly dry and unwrinkled."
+    },
+    {
+      "place": "Station kettle corner",
+      "axis": "drink",
+      "value": "hot cocoa",
+      "not": true,
+      "text": "Hot cocoa spill marks dot the kettle corner, but the culprit is not the one who ordered cocoa, as the barista swears no cocoa was poured."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-05",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

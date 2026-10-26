@@ -1,0 +1,95 @@
+{
+  "title": "The Lighthouse Blueprint Leak",
+  "intro": "The keeper's secret plan for a new foghorn has vanished from the lighthouse office, and someone on the rocky cape knows more than they admit.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Marlow",
+      "emoji": "🧔",
+      "line": "I only came up for the view, I swear on my fishing hat.",
+      "wear": "yellow sou'wester",
+      "carry": "fishing net",
+      "spot": "harbour wall"
+    },
+    {
+      "name": "Tomas",
+      "emoji": "🧑‍🔧",
+      "line": "Fixing the gate all day. Hands were busy, ask anyone.",
+      "wear": "red bandana",
+      "carry": "toolbox",
+      "spot": "cliff path"
+    },
+    {
+      "name": "Oswin",
+      "emoji": "🧓",
+      "line": "Foghorns? Bah. In my day we just shouted.",
+      "wear": "yellow sou'wester",
+      "carry": "tin lantern",
+      "spot": "lighthouse steps"
+    },
+    {
+      "name": "Juniper",
+      "emoji": "👧",
+      "line": "I brought my dog. He has an alibi too, probably.",
+      "wear": "blue raincoat",
+      "carry": "tin lantern",
+      "spot": "harbour wall"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I was sketching gulls all afternoon. Ask my notebook.",
+      "wear": "red bandana",
+      "carry": "sketchbook",
+      "spot": "cliff path"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Cape fishing shed",
+      "axis": "carry",
+      "value": "fishing net",
+      "not": true,
+      "text": "A dropped fishing net lies here, but its owner was not carrying it at the time of the theft. The net is cleared of any link to the missing plans."
+    },
+    {
+      "place": "Foot of the lighthouse",
+      "axis": "spot",
+      "value": "lighthouse steps",
+      "not": true,
+      "text": "Wet footprints on the lighthouse steps match no one's trail, so the culprit was not last seen there. Whoever climbed these steps left by a different path."
+    },
+    {
+      "place": "Old harbour wall",
+      "axis": "spot",
+      "value": "harbour wall",
+      "text": "A gull-watcher saw someone last seen heading out along the harbour wall just before dusk. The figure was lingering near the water's edge."
+    },
+    {
+      "place": "Lighthouse office desk",
+      "axis": "carry",
+      "value": "tin lantern",
+      "text": "A smudged print shows the culprit was carrying a tin lantern when they slipped in. The lantern's dented rim left a mark on the doorframe."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-08",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

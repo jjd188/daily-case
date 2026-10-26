@@ -1,0 +1,95 @@
+{
+  "title": "The Secret Seedling Scheme",
+  "intro": "Someone has leaked the secret plan for the garden's surprise sunflower maze, and the gardeners are sure a suspect is hiding among them.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Ivy",
+      "emoji": "👧",
+      "line": "Sunflowers? I don't know what those look like.",
+      "wear": "yellow rain jacket",
+      "carry": "watering can",
+      "spot": "sunflower bed"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👵",
+      "line": "I only come for the tomatoes, dear. Nothing else.",
+      "wear": "floppy straw hat",
+      "carry": "watering can",
+      "spot": "compost heap"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧒",
+      "line": "I brought my lunch, so I wasn't really here.",
+      "wear": "green overalls",
+      "carry": "lunch box",
+      "spot": "sunflower bed"
+    },
+    {
+      "name": "Rufus",
+      "emoji": "🧑‍🌾",
+      "line": "I was fixing the fence. Ask the fence.",
+      "wear": "green overalls",
+      "carry": "garden fork",
+      "spot": "tool shed"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "I was reading by the pond. The frogs are witnesses.",
+      "wear": "yellow rain jacket",
+      "carry": "notebook",
+      "spot": "pond bench"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Potting bench",
+      "axis": "carry",
+      "value": "notebook",
+      "not": true,
+      "text": "A spilled notebook sat open on the potting bench, its pages still dry. The culprit is not carrying a notebook, so this trail leads elsewhere."
+    },
+    {
+      "place": "Compost heap",
+      "axis": "spot",
+      "value": "compost heap",
+      "not": true,
+      "text": "The compost heap was untouched, with no footprints or scattered leaves. The culprit was not last seen at the compost heap."
+    },
+    {
+      "place": "Tool shed hook",
+      "axis": "wear",
+      "value": "green overalls",
+      "text": "A scrap of green overalls was snagged on the shed hook, so the culprit must have been wearing green overalls that morning."
+    },
+    {
+      "place": "Sunflower bed",
+      "axis": "spot",
+      "value": "sunflower bed",
+      "text": "Fresh boot prints circled the sunflower bed, and the culprit was last seen standing right there among the stalks."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-02",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
