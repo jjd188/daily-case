@@ -1,0 +1,96 @@
+{
+  "title": "The Swapped Spotlight Cup",
+  "intro": "Minutes before the talent show finale, the winner's gleaming prize cup is gone, and a plastic copy sits in its place on the stage table.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "feet",
+      "label": "Footwear"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Jonah",
+      "emoji": "🧑‍🏫",
+      "line": "I was judging, not wandering. Clipboard says so.",
+      "wear": "tweed blazer",
+      "feet": "brown loafers",
+      "spot": "front row"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧑‍🎓",
+      "line": "I only came backstage to find a charger.",
+      "wear": "grey hoodie",
+      "feet": "black sneakers",
+      "spot": "stage wings"
+    },
+    {
+      "name": "Lena",
+      "emoji": "👧",
+      "line": "I was in the bathroom doing my makeup, duh.",
+      "wear": "grey hoodie",
+      "feet": "brown loafers",
+      "spot": "music room"
+    },
+    {
+      "name": "Maya",
+      "emoji": "🧑‍🎤",
+      "line": "I was tuning my guitar all afternoon, honest!",
+      "wear": "sparkly red jacket",
+      "feet": "black sneakers",
+      "spot": "music room"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🎤",
+      "line": "Ask the lighting crew, they saw me all night.",
+      "wear": "sparkly red jacket",
+      "feet": "white high-tops",
+      "spot": "stage wings"
+    }
+  ],
+  "culprit": 4,
+  "clues": [
+    {
+      "place": "Dressing room mirror",
+      "axis": "wear",
+      "value": "grey hoodie",
+      "not": true,
+      "text": "Someone left a smudge on the mirror that matches a grey hoodie, so the culprit is not the one in the grey hoodie."
+    },
+    {
+      "place": "Snack table",
+      "axis": "spot",
+      "value": "front row",
+      "not": true,
+      "text": "Crumbs were found beside the spot where the culprit was last seen, which is not the front row, so that seat is cleared."
+    },
+    {
+      "place": "Coat rack by stage door",
+      "axis": "wear",
+      "value": "sparkly red jacket",
+      "text": "A thread of sparkly red jacket fabric snagged on the coat rack hook, so the culprit was wearing that jacket."
+    },
+    {
+      "place": "Stage steps",
+      "axis": "feet",
+      "value": "black sneakers",
+      "not": true,
+      "text": "Clean black sneaker prints show the culprit did not wear black sneakers, so those shoes can be ruled out."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-14",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

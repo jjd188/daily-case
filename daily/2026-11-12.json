@@ -1,0 +1,96 @@
+{
+  "title": "The Swapped Showcase Variant",
+  "intro": "The shop's rare, signed comic prize has been replaced with a cheap copy, and the real one has vanished from the glass case.",
+  "axes": [
+    {
+      "key": "smell",
+      "label": "Smell"
+    },
+    {
+      "key": "left",
+      "label": "Left behind"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦰",
+      "line": "I was checking prices on the wall. Nothing else, I promise.",
+      "smell": "fresh popcorn",
+      "left": "sticky note",
+      "hands": "clean and bare"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "🧑‍🦱",
+      "line": "I only came in for the new issue of my favourite series, honest.",
+      "smell": "sharp coffee",
+      "left": "sticky note",
+      "hands": "ink-stained fingers"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑‍🦳",
+      "line": "Me? I just sat in the reading corner and read the whole back issue.",
+      "smell": "lemon soap",
+      "left": "dog-eared bookmark",
+      "hands": "glove marks"
+    },
+    {
+      "name": "Nell",
+      "emoji": "🧑‍🎨",
+      "line": "I was drawing sketches by the counter. Look at my notebook!",
+      "smell": "fresh popcorn",
+      "left": "pencil shavings",
+      "hands": "glove marks"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧔",
+      "line": "I've been reorganising the back bins all morning. Ask anyone.",
+      "smell": "sharp coffee",
+      "left": "dog-eared bookmark",
+      "hands": "ink-stained fingers"
+    }
+  ],
+  "culprit": 4,
+  "clues": [
+    {
+      "place": "Glass case, lower shelf",
+      "axis": "left",
+      "value": "sticky note",
+      "not": true,
+      "text": "Nothing was left on the glass behind the empty stand, no scribbled notes or paper scraps at all. So the culprit did not leave a sticky note behind."
+    },
+    {
+      "place": "Restroom hand dryer nook",
+      "axis": "smell",
+      "value": "lemon soap",
+      "not": true,
+      "text": "The air here smells of lemon soap, but that scent is a red herring: whoever came through this spot did not carry it. The lemon soap smell can be ruled out."
+    },
+    {
+      "place": "Case handle and latch",
+      "axis": "hands",
+      "value": "glove marks",
+      "not": true,
+      "text": "The latch shows smooth fingerprints and no fabric smudges, so the thief was not wearing gloves. Glove marks are ruled out for the culprit."
+    },
+    {
+      "place": "Shop counter by the till",
+      "axis": "smell",
+      "value": "sharp coffee",
+      "text": "A trace of sharp coffee hangs over the counter, the kind of strong brew the culprit clearly had on their breath or clothes. Keep an eye out for that smell."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-12",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

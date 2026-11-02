@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Honey Pot Lid",
+  "intro": "The prize-winning cider jug has gone missing from the farmers market's jam table, and it was last seen in the middle of the morning rush.",
+  "axes": [
+    {
+      "key": "sip",
+      "label": "Drinking"
+    },
+    {
+      "key": "feet",
+      "label": "Footwear"
+    },
+    {
+      "key": "arrive",
+      "label": "Arrived"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "Cider's my specialty, so I was tasting all morning.",
+      "sip": "apple cider",
+      "feet": "brown boots",
+      "arrive": "at dawn"
+    },
+    {
+      "name": "Wren",
+      "emoji": "🧑",
+      "line": "I was painting faces by the fountain all morning.",
+      "sip": "apple cider",
+      "feet": "red sneakers",
+      "arrive": "at dawn"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩‍🌾",
+      "line": "I've been selling tomatoes since sunrise. Ask anyone.",
+      "sip": "lemonade",
+      "feet": "green wellies",
+      "arrive": "at dawn"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑‍🦱",
+      "line": "Who's been moving my crate of squash?",
+      "sip": "iced tea",
+      "feet": "green wellies",
+      "arrive": "after nine"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "I only came for the cheese stall, honestly.",
+      "sip": "lemonade",
+      "feet": "red sneakers",
+      "arrive": "after nine"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Lemonade cart",
+      "axis": "sip",
+      "value": "lemonade",
+      "not": true,
+      "text": "The lemonade vendor swears the culprit is not the one who ordered lemonade; the cup count at her cart has been perfectly balanced all morning."
+    },
+    {
+      "place": "Muddy path by the gate",
+      "axis": "feet",
+      "value": "red sneakers",
+      "not": true,
+      "text": "Clean red sneaker prints lead away from the scene, and the culprit's footprints are not red sneakers; these muddy tracks came from someone else entirely."
+    },
+    {
+      "place": "Iced tea urn",
+      "axis": "sip",
+      "value": "iced tea",
+      "not": true,
+      "text": "The iced tea urn is still full to the brim, so the culprit is not the one who drank iced tea today."
+    },
+    {
+      "place": "Jam table, cider stand",
+      "axis": "sip",
+      "value": "apple cider",
+      "text": "A sticky ring and a crumpled napkin suggest the culprit was sipping apple cider while hovering near the jam table."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-10",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

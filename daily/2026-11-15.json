@@ -1,0 +1,96 @@
+{
+  "title": "The Muddy Paw Mischief",
+  "intro": "Someone has let every adoptable puppy out of its pen during the pet adoption fair, and the rescue volunteers are scrambling to find the culprit.",
+  "axes": [
+    {
+      "key": "sound",
+      "label": "Sound"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "arrived",
+      "label": "When they arrived"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Nadia",
+      "emoji": "🧑‍🦱",
+      "line": "I was signing forms the whole morning, ask anyone.",
+      "sound": "tapping clipboard",
+      "hands": "ink-stained fingers",
+      "arrived": "before opening"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I was busy with the bunnies, honest!",
+      "sound": "whistling",
+      "hands": "muddy gloves",
+      "arrived": "before opening"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧑",
+      "line": "Dogs love me. I have never once let one loose.",
+      "sound": "jingling keys",
+      "hands": "dog treat crumbs",
+      "arrived": "before opening"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧒",
+      "line": "Why would I open gates? I'm allergic to fur.",
+      "sound": "jingling keys",
+      "hands": "muddy gloves",
+      "arrived": "after lunch"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧",
+      "line": "I only came for the kittens, I swear on my scarf.",
+      "sound": "whistling",
+      "hands": "clean hands",
+      "arrived": "after lunch"
+    }
+  ],
+  "culprit": 2,
+  "clues": [
+    {
+      "place": "Pen gate latch",
+      "axis": "sound",
+      "value": "jingling keys",
+      "text": "Witnesses swore they heard jingling keys near the gate just before the pens popped open, so whoever came by was carrying a bunch of keys."
+    },
+    {
+      "place": "Check-in table",
+      "axis": "sound",
+      "value": "tapping clipboard",
+      "not": true,
+      "text": "Nobody at the desk was tapping a clipboard during the escape, so the culprit is not tapping clipboard; the clipboard taps were all heard far from the pens."
+    },
+    {
+      "place": "Water bowl by pen 4",
+      "axis": "hands",
+      "value": "muddy gloves",
+      "not": true,
+      "text": "Muddy paw prints lead everywhere, yet the culprit's hands were clean: the culprit is not muddy gloves, as the gloves were found dry and spotless."
+    },
+    {
+      "place": "Volunteer bench",
+      "axis": "sound",
+      "value": "whistling",
+      "not": true,
+      "text": "A volunteer who was whistling the whole morning has a sure alibi: the culprit is not whistling, since whistling could be heard across the fair the entire time."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-15",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

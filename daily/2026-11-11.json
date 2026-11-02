@@ -1,0 +1,96 @@
+{
+  "title": "The Soaked Sunflower Stunt",
+  "intro": "Someone sabotaged the community garden's sunflower contest by swapping the sprinkler timers, and every entry is now a soggy mess.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Ruben",
+      "emoji": "🧑‍🦱",
+      "line": "Sprinklers? Never touched one. Ask the hose.",
+      "hands": "muddy hands",
+      "carry": "watering can",
+      "spot": "sunflower beds"
+    },
+    {
+      "name": "Maya",
+      "emoji": "👩‍🌾",
+      "line": "My hands are clean, see? Mostly clean.",
+      "hands": "green gloves",
+      "carry": "watering can",
+      "spot": "tool shed"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "I was judging the pumpkins all morning.",
+      "hands": "green gloves",
+      "carry": "clipboard",
+      "spot": "pumpkin patch"
+    },
+    {
+      "name": "Lupe",
+      "emoji": "👧",
+      "line": "I was napping under the big oak. Honest!",
+      "hands": "bare hands",
+      "carry": "clipboard",
+      "spot": "pumpkin patch"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I only came for the lemonade, I swear.",
+      "hands": "muddy hands",
+      "carry": "lemonade jug",
+      "spot": "lemonade stand"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Pumpkin patch gate",
+      "axis": "spot",
+      "value": "pumpkin patch",
+      "not": true,
+      "text": "A gardener swears they saw the pumpkin patch crew leaving the gate at dusk, but the timers were already swapped by then, so they are not the culprit."
+    },
+    {
+      "place": "Lemonade stand table",
+      "axis": "carry",
+      "value": "lemonade jug",
+      "not": true,
+      "text": "The lemonade jug sat untouched and full all afternoon, so whoever carried it did not handle the sprinkler controls and is not the culprit."
+    },
+    {
+      "place": "Hose reel by the beds",
+      "axis": "hands",
+      "value": "green gloves",
+      "not": true,
+      "text": "Green gloves were found dry and tidy on the hose reel, so their wearer was never near the timers and is not the culprit."
+    },
+    {
+      "place": "Garden shed workbench",
+      "axis": "hands",
+      "value": "muddy hands",
+      "text": "Fresh soil crumbs and a smear of dirt on the timer dial suggest the saboteur had muddy hands when they reset it."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-11",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
