@@ -1,0 +1,96 @@
+{
+  "title": "The Rooftop Recipe Leak",
+  "intro": "Just before the rooftop movie started, the family's secret popcorn recipe was found pinned to the wrong projector screen.",
+  "axes": [
+    {
+      "key": "hat",
+      "label": "Hair or hat"
+    },
+    {
+      "key": "smell",
+      "label": "Smell"
+    },
+    {
+      "key": "accessory",
+      "label": "Accessory"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Oskar",
+      "emoji": "🧑‍🍳",
+      "line": "Recipes are my life. Nobody touches my notes.",
+      "hat": "chef's hat",
+      "smell": "peppermint",
+      "accessory": "reading glasses"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👵",
+      "line": "I've been knitting by the railing all evening, dear.",
+      "hat": "knitted beanie",
+      "smell": "peppermint",
+      "accessory": "reading glasses"
+    },
+    {
+      "name": "Juno",
+      "emoji": "👧",
+      "line": "I was busy blowing up beach balls the whole time!",
+      "hat": "baseball cap",
+      "smell": "sunscreen",
+      "accessory": "friendship bracelets"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "I was sitting right next to the projector cable, promise.",
+      "hat": "knitted beanie",
+      "smell": "popcorn butter",
+      "accessory": "friendship bracelets"
+    },
+    {
+      "name": "Rafi",
+      "emoji": "🧑",
+      "line": "I only came up for the snacks, I swear.",
+      "hat": "baseball cap",
+      "smell": "popcorn butter",
+      "accessory": "wristwatch"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Projector booth door",
+      "axis": "accessory",
+      "value": "reading glasses",
+      "text": "A pair of reading glasses was left hooked on the booth latch. The culprit wears reading glasses, which narrows the suspects considerably."
+    },
+    {
+      "place": "Rooftop railing",
+      "axis": "hat",
+      "value": "knitted beanie",
+      "not": true,
+      "text": "A knitted beanie snagged on the railing rules out anyone wearing one. The culprit was not the beanie wearer, so that hat is off the list."
+    },
+    {
+      "place": "Blanket pile",
+      "axis": "accessory",
+      "value": "friendship bracelets",
+      "not": true,
+      "text": "A friendship bracelet was found tangled in the blanket pile. The culprit is not the one wearing friendship bracelets, so that bracelet owner is cleared."
+    },
+    {
+      "place": "Snack table",
+      "axis": "smell",
+      "value": "sunscreen",
+      "not": true,
+      "text": "A cloud of sunscreen-scented air hangs over the cooler. Whoever pinned the recipe does not smell of sunscreen, so that scent is ruled out."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-17",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

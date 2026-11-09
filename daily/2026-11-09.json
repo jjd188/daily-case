@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Wooden Locomotive",
+  "intro": "The prize-winning wooden locomotive has disappeared from the display shelf at the toy workshop just before the big open-day inspection.",
+  "axes": [
+    {
+      "key": "accessory",
+      "label": "Accessory"
+    },
+    {
+      "key": "travel",
+      "label": "How they travel"
+    },
+    {
+      "key": "sip",
+      "label": "Eating or drinking"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Odin",
+      "emoji": "🧑‍🔬",
+      "line": "The shelf was fine when I dusted it, honest.",
+      "accessory": "yellow goggles",
+      "travel": "bicycle",
+      "sip": "apple juice"
+    },
+    {
+      "name": "Rosa",
+      "emoji": "👧",
+      "line": "I was painting the tunnel set in the back room.",
+      "accessory": "yellow goggles",
+      "travel": "scooter",
+      "sip": "lemonade"
+    },
+    {
+      "name": "Teo",
+      "emoji": "🧑‍🎨",
+      "line": "Trains? I only paint the tiny cows, thanks.",
+      "accessory": "striped apron",
+      "travel": "walked",
+      "sip": "hot cocoa"
+    },
+    {
+      "name": "Pip",
+      "emoji": "🧒",
+      "line": "I only came in for the glue. That's all.",
+      "accessory": "red bandana",
+      "travel": "scooter",
+      "sip": "apple juice"
+    },
+    {
+      "name": "Marta",
+      "emoji": "👩‍🔧",
+      "line": "I was tightening bolts all afternoon. Ask anyone.",
+      "accessory": "red bandana",
+      "travel": "bicycle",
+      "sip": "lemonade"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Cocoa pot, back room",
+      "axis": "sip",
+      "value": "hot cocoa",
+      "not": true,
+      "text": "The cocoa pot was still warm and full, and its drinker was seen sipping quietly the entire time, so the hot cocoa drinker is not the culprit."
+    },
+    {
+      "place": "Apron hook, door",
+      "axis": "accessory",
+      "value": "striped apron",
+      "not": true,
+      "text": "The striped apron hanging on its hook has been cleared of suspicion: its owner was measuring timber in the yard the whole time, so it is not the culprit's."
+    },
+    {
+      "place": "Workbench by the window",
+      "axis": "accessory",
+      "value": "red bandana",
+      "text": "A loose red bandana was left tangled on the workbench, the kind someone wears knotted at the neck while sanding and painting."
+    },
+    {
+      "place": "Lemonade stand",
+      "axis": "sip",
+      "value": "lemonade",
+      "not": true,
+      "text": "A sticky lemonade cup sat on the stand, but its owner was still pouring glasses for the queue, so the lemonade drinker is not the culprit."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-09",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Clownfish Pendant",
+  "intro": "A silver clownfish pendant has disappeared from the glass case at the aquarium gift shop just before closing time.",
+  "axes": [
+    {
+      "key": "travel",
+      "label": "How they came"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "leftbehind",
+      "label": "Left behind"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Wren",
+      "emoji": "🧒",
+      "line": "I was just sitting on the bench reading.",
+      "travel": "bus",
+      "spot": "gift counter",
+      "leftbehind": "sticky popcorn"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧑",
+      "line": "Sharks are my favorite, not shiny fish.",
+      "travel": "car",
+      "spot": "shark tunnel",
+      "leftbehind": "sticky popcorn"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧔",
+      "line": "I was looking at the octopus tank the whole time.",
+      "travel": "bus",
+      "spot": "octopus tank",
+      "leftbehind": "fishy smell"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "Ask the cashier, she saw everything.",
+      "travel": "bike",
+      "spot": "gift counter",
+      "leftbehind": "fishy smell"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I only came in for a postcard, I promise!",
+      "travel": "bike",
+      "spot": "ticket desk",
+      "leftbehind": "wet footprints"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Ticket desk",
+      "axis": "spot",
+      "value": "ticket desk",
+      "not": true,
+      "text": "The ticket desk camera shows the culprit was not here at closing time. The clerk swears this spot stayed empty all evening."
+    },
+    {
+      "place": "Popcorn cart",
+      "axis": "leftbehind",
+      "value": "sticky popcorn",
+      "not": true,
+      "text": "A sticky popcorn trail was found near the case, but it does not match the culprit's shoes. Whoever left those sticky footprints was someone else entirely."
+    },
+    {
+      "place": "Bike rack by the gate",
+      "axis": "travel",
+      "value": "bike",
+      "text": "Muddy bicycle tracks lead straight to this rack, so the culprit definitely came by bike. Someone pedaled in with a plan."
+    },
+    {
+      "place": "Octopus tank",
+      "axis": "spot",
+      "value": "octopus tank",
+      "not": true,
+      "text": "The culprit is not the one who was seen at the octopus tank. The octopus was too busy sulking to notice anyone lingering there."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-18",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

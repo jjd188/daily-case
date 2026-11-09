@@ -1,0 +1,95 @@
+{
+  "title": "The Windmill Hole Sabotage",
+  "intro": "Someone has sabotaged the indoor mini-golf tournament by swapping the course's scorecards and slipping gummy worms into the hole cups.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "snack",
+      "label": "Snack"
+    },
+    {
+      "key": "hat",
+      "label": "Hat"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Kenji",
+      "emoji": "🧒",
+      "line": "Popcorn? Nope, I was too focused on my score.",
+      "hands": "chalk-dusted gloves",
+      "snack": "popcorn",
+      "hat": "red beanie"
+    },
+    {
+      "name": "Oona",
+      "emoji": "🧑‍🦱",
+      "line": "I just came for the free lemonade.",
+      "hands": "bare and empty",
+      "snack": "lemonade",
+      "hat": "no hat"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧑",
+      "line": "My hands are spotless. Check them again.",
+      "hands": "chalk-dusted gloves",
+      "snack": "orange soda",
+      "hat": "yellow visor"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I was only holding my putter, I swear it.",
+      "hands": "gummy-sticky fingers",
+      "snack": "orange soda",
+      "hat": "yellow visor"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👧",
+      "line": "I was busy cheering from the bench.",
+      "hands": "gummy-sticky fingers",
+      "snack": "popcorn",
+      "hat": "red beanie"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Popcorn Bucket",
+      "axis": "snack",
+      "value": "popcorn",
+      "not": true,
+      "text": "The popcorn bucket by the snack stand is still full and untouched. Whoever ate during the sabotage was definitely not eating popcorn."
+    },
+    {
+      "place": "Coat Rack",
+      "axis": "hat",
+      "value": "red beanie",
+      "not": true,
+      "text": "A red beanie was found hanging neatly on the coat rack, with no one wearing it nearby. The culprit was not wearing a red beanie."
+    },
+    {
+      "place": "Scorecard Table",
+      "axis": "hands",
+      "value": "gummy-sticky fingers",
+      "text": "Sticky gummy-sticky fingers left smudges all over the swapped scorecards. Whoever touched these had gummy-sticky fingers."
+    },
+    {
+      "place": "Concession Counter",
+      "axis": "snack",
+      "value": "orange soda",
+      "text": "A half-empty orange soda was found tucked under a bench near the windmill. Someone here was drinking orange soda during the mix-up."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-20",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
