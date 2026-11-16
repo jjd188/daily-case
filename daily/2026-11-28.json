@@ -1,0 +1,96 @@
+{
+  "title": "The Leaked Tomato Trellis Plan",
+  "intro": "Someone has passed the community garden's secret tomato trellis design to the rival allotment across the road, and the blueprint is nowhere to be found.",
+  "axes": [
+    {
+      "key": "spot",
+      "label": "Last seen"
+    },
+    {
+      "key": "wear",
+      "label": "Accessory"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Hugo",
+      "emoji": "🧑🏼",
+      "line": "The rival allotment? Never heard of them. Pass the hose.",
+      "spot": "water tank",
+      "wear": "green bandana",
+      "hands": "gardening gloves"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "Sure, I was near the compost. Smelled wonderful there.",
+      "spot": "compost bins",
+      "wear": "green bandana",
+      "hands": "soil-stained"
+    },
+    {
+      "name": "Lena",
+      "emoji": "👩🏻",
+      "line": "I only came to drop off seedlings. Ten minutes, tops.",
+      "spot": "gate",
+      "wear": "wide brim cap",
+      "hands": "clean"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩🏾",
+      "line": "I was at the greenhouse all morning, honest.",
+      "spot": "greenhouse",
+      "wear": "straw sunhat",
+      "hands": "gardening gloves"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩🏽‍🌾",
+      "line": "I've been weeding the beds since breakfast. Ask anyone.",
+      "spot": "potting shed",
+      "wear": "straw sunhat",
+      "hands": "soil-stained"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Potting shed hook",
+      "axis": "wear",
+      "value": "green bandana",
+      "text": "A green bandana was snagged on the potting shed hook, and its knot still looks freshly tied. The thief wore it while slipping away."
+    },
+    {
+      "place": "Greenhouse glass door",
+      "axis": "spot",
+      "value": "greenhouse",
+      "not": true,
+      "text": "A footprint and a smear of dust show the culprit did not come through here. Whoever left the blueprint was never seen near the greenhouse at all."
+    },
+    {
+      "place": "Gate latch",
+      "axis": "wear",
+      "value": "wide brim cap",
+      "not": true,
+      "text": "A wide brim cap was left hanging on the gate latch, but its owner was across the garden at the time. Its wearer is cleared of the leak."
+    },
+    {
+      "place": "Watering can handle",
+      "axis": "hands",
+      "value": "soil-stained",
+      "not": true,
+      "text": "The watering can handle is clean and dry, with no soil on it. Whoever carried the blueprint did not have soil-stained hands."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-28",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

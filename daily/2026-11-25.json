@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Skate Key",
+  "intro": "The rink's prized golden skate key, the one that unlocks the old wooden cabinet, has gone missing during the couples skate.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Priya",
+      "emoji": "👧",
+      "line": "My skates are brand new, so I'm not sneaky, I'm just fast.",
+      "wear": "red tracksuit",
+      "carry": "toolbox",
+      "spot": "changing room"
+    },
+    {
+      "name": "Gus",
+      "emoji": "🧒",
+      "line": "Fixing a wobbly wheel is not a crime, grown-ups.",
+      "wear": "green hoodie",
+      "carry": "toolbox",
+      "spot": "repair stand"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I was skating laps the whole time. Ask anyone who watched.",
+      "wear": "red tracksuit",
+      "carry": "water bottle",
+      "spot": "rink floor"
+    },
+    {
+      "name": "Tobias",
+      "emoji": "🧑",
+      "line": "I only came for the nachos. Honest, nachos only.",
+      "wear": "denim jacket",
+      "carry": "snack tray",
+      "spot": "snack bar"
+    },
+    {
+      "name": "Juniper",
+      "emoji": "🧑‍🎤",
+      "line": "I was dancing to the music. Nobody dances alone like I do.",
+      "wear": "sequin top",
+      "carry": "skate bag",
+      "spot": "rink floor"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Rink floor chalk mark",
+      "axis": "spot",
+      "value": "rink floor",
+      "not": true,
+      "text": "Skate tracks show the rink floor was crossed at the spot where the key vanished, but the culprit was not last seen on the rink floor, so it was someone else."
+    },
+    {
+      "place": "Snack bar receipt",
+      "axis": "spot",
+      "value": "snack bar",
+      "not": true,
+      "text": "A paid receipt timed during the couples skate proves the culprit was not last seen at the snack bar, so that visit is ruled out entirely."
+    },
+    {
+      "place": "Under the toolbox lid",
+      "axis": "carry",
+      "value": "toolbox",
+      "text": "A toolbox was left open near the cabinet, and the culprit was carrying a toolbox, the only one on the rink that night."
+    },
+    {
+      "place": "Lost and found bin",
+      "axis": "wear",
+      "value": "red tracksuit",
+      "not": true,
+      "text": "A scrap of red tracksuit fabric was snagged here. Whoever wore that red tracksuit was not the one who took the key, so they are cleared of suspicion."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-25",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

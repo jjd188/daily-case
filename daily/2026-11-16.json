@@ -1,0 +1,96 @@
+{
+  "title": "The Vanished Volcano Model",
+  "intro": "Just before judging, the prize-winning volcano model has disappeared from its table at the school science fair.",
+  "axes": [
+    {
+      "key": "hair",
+      "label": "Hair or hat"
+    },
+    {
+      "key": "travel",
+      "label": "How they travel"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Marcus",
+      "emoji": "🧑",
+      "line": "My volcano erupted early, so I was cleaning up.",
+      "hair": "bobble hat",
+      "travel": "school bus",
+      "hands": "orange stains"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🔬",
+      "line": "I only came to see the baking-soda demo, honest.",
+      "hair": "bobble hat",
+      "travel": "bicycle",
+      "hands": "orange stains"
+    },
+    {
+      "name": "Theo",
+      "emoji": "🧒",
+      "line": "Judges can't be trusted, that's all I'll say.",
+      "hair": "ponytail",
+      "travel": "school bus",
+      "hands": "clean gloves"
+    },
+    {
+      "name": "Yusuf",
+      "emoji": "🧑‍🎓",
+      "line": "I was watching the robot team, nothing else.",
+      "hair": "baseball cap",
+      "travel": "walking",
+      "hands": "sticky fingers"
+    },
+    {
+      "name": "Lena",
+      "emoji": "👧",
+      "line": "I was in the gym looking for my missing glue stick.",
+      "hair": "ponytail",
+      "travel": "bicycle",
+      "hands": "clean gloves"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Lost property box",
+      "axis": "hair",
+      "value": "baseball cap",
+      "not": true,
+      "text": "A baseball cap turned up in the lost property box, a clear sign its owner was over by the fruit punch when the model vanished."
+    },
+    {
+      "place": "East fence bike rack",
+      "axis": "travel",
+      "value": "bicycle",
+      "not": true,
+      "text": "The bike rack shows every bicycle still locked in place, so no bicycle rider could have carried the volcano model away from the fair."
+    },
+    {
+      "place": "Table 7 sign-in sheet",
+      "axis": "hair",
+      "value": "ponytail",
+      "not": true,
+      "text": "The sign-in sheet shows the ponytail crowd was busy at the sponge-cake stall, so none of them could have been near the volcano table at that time."
+    },
+    {
+      "place": "Gym door coat hook",
+      "axis": "hair",
+      "value": "bobble hat",
+      "text": "A woolly bobble hat was left snagged on the coat hook, its pompom still dripping from a quick dash through the rain."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-16",
+    "model": "claude-haiku-5-5",
+    "attempts": 3,
+    "par": 2
+  }
+}

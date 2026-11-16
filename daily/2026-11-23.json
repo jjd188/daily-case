@@ -1,0 +1,95 @@
+{
+  "title": "The Vanished Spinning Top",
+  "intro": "The gold-painted spinning top, the workshop's prize creation, has disappeared from its velvet cushion just before the toymakers' open day.",
+  "axes": [
+    {
+      "key": "accessory",
+      "label": "Accessory"
+    },
+    {
+      "key": "travel",
+      "label": "How they travel"
+    },
+    {
+      "key": "hands",
+      "label": "Hands"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Priya",
+      "emoji": "👩",
+      "line": "I was in the back room with the sewing machines, honest.",
+      "accessory": "red bandana",
+      "travel": "bicycle",
+      "hands": "glue-stained"
+    },
+    {
+      "name": "Otto",
+      "emoji": "🧔",
+      "line": "I only came in to check the glue pots. Nothing else.",
+      "accessory": "tool belt",
+      "travel": "tram",
+      "hands": "glue-stained"
+    },
+    {
+      "name": "Mabel",
+      "emoji": "👩‍🔧",
+      "line": "I was sanding the rocking horse all morning. Ask anyone.",
+      "accessory": "tool belt",
+      "travel": "bicycle",
+      "hands": "paint-smudged"
+    },
+    {
+      "name": "Rafi",
+      "emoji": "🧑",
+      "line": "Top? What top? I've been wrapping parcels since nine.",
+      "accessory": "red bandana",
+      "travel": "tram",
+      "hands": "wool-fluffed"
+    },
+    {
+      "name": "Sol",
+      "emoji": "👴",
+      "line": "My knees are too old for sneaking about, young lady.",
+      "accessory": "round spectacles",
+      "travel": "walks",
+      "hands": "paint-smudged"
+    }
+  ],
+  "culprit": 1,
+  "clues": [
+    {
+      "place": "Front gate boot scrape",
+      "axis": "travel",
+      "value": "walks",
+      "not": true,
+      "text": "Fresh footprints lead straight up the path, but the gate log shows nobody on foot signed in past noon. The culprit did not walk here."
+    },
+    {
+      "place": "Workshop coat hooks",
+      "axis": "accessory",
+      "value": "red bandana",
+      "not": true,
+      "text": "A red bandana was found tucked under the glue pot, and its owner was seen at the bench all afternoon. The culprit is not the person who wears a red bandana."
+    },
+    {
+      "place": "Glue pot lid",
+      "axis": "hands",
+      "value": "glue-stained",
+      "text": "Sticky gold-tinted fingerprints smeared the glue pot lid, and a glue-stained thumb print is still visible on the lid's rim. The culprit has glue-stained hands."
+    },
+    {
+      "place": "Tram stop timetable",
+      "axis": "travel",
+      "value": "tram",
+      "text": "Muddy tram tickets were found in the bin by the stop, and the tram's last run was the one that left the depot. The culprit came in on a tram."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-23",
+    "model": "claude-haiku-5-5",
+    "attempts": 2,
+    "par": 2
+  }
+}

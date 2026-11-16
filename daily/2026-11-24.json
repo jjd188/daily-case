@@ -1,0 +1,95 @@
+{
+  "title": "The Mud-Pie Mischief at Curtain Call",
+  "intro": "Ten minutes before opening night, the lead actor's costume has been swapped and the prop cake has vanished from the community theater's green room.",
+  "axes": [
+    {
+      "key": "hands",
+      "label": "Hands"
+    },
+    {
+      "key": "drink",
+      "label": "Holding"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Rory",
+      "emoji": "🧑",
+      "line": "I was on the stage painting the backdrop. Ask anyone with a paintbrush!",
+      "hands": "paint splattered",
+      "drink": "sports bottle",
+      "spot": "stage"
+    },
+    {
+      "name": "Priya",
+      "emoji": "🧑‍🦱",
+      "line": "Sorry, I was busy hunting for my missing script. Still can't find it!",
+      "hands": "paint splattered",
+      "drink": "lemonade cup",
+      "spot": "stage"
+    },
+    {
+      "name": "Otis",
+      "emoji": "🧔",
+      "line": "I was sound-checking the mic. Loud and clear, I was nowhere near the cake.",
+      "hands": "clean gloves",
+      "drink": "sports bottle",
+      "spot": "green room"
+    },
+    {
+      "name": "Nadia",
+      "emoji": "👩‍🎤",
+      "line": "Frosting? Me? I only lick the spoon when no one's looking.",
+      "hands": "frosting smeared",
+      "drink": "paper teacup",
+      "spot": "green room"
+    },
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "My hands are spotless, darling. I wouldn't dream of touching the cake.",
+      "hands": "flour dusted",
+      "drink": "paper teacup",
+      "spot": "wardrobe room"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Costume rack",
+      "axis": "hands",
+      "value": "paint splattered",
+      "not": true,
+      "text": "Fingerprints on the swapped costume show clean hands, no paint splattered on the sleeves. Whoever swapped it did not have paint on their fingers."
+    },
+    {
+      "place": "Green room door",
+      "axis": "spot",
+      "value": "green room",
+      "text": "The last witness saw someone leave the green room just before the cake vanished. The culprit was last seen in the green room, minutes before the curtain was due."
+    },
+    {
+      "place": "Water cooler",
+      "axis": "drink",
+      "value": "sports bottle",
+      "not": true,
+      "text": "A sports bottle was found refilled and untouched by the cooler, so its owner was not the one who stole the cake. Only the sports bottle is cleared."
+    },
+    {
+      "place": "Prop table",
+      "axis": "drink",
+      "value": "paper teacup",
+      "text": "A paper teacup was left beside the empty cake stand. Someone was carrying a paper teacup when they slipped away with the cake."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-24",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

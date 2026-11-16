@@ -1,0 +1,96 @@
+{
+  "title": "The Projector Switcheroo",
+  "intro": "Just as the rooftop movie night begins, the projector goes dark and the screen shows a silly cartoon instead of the film. Someone rigged the prank.",
+  "axes": [
+    {
+      "key": "travel",
+      "label": "How they got up"
+    },
+    {
+      "key": "wear",
+      "label": "Clothing"
+    },
+    {
+      "key": "arrived",
+      "label": "When they arrived"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Theo",
+      "emoji": "🧒",
+      "line": "The elevator was broken, so I climbed the fire escape. Totally legal.",
+      "travel": "fire escape",
+      "wear": "red bike jacket",
+      "arrived": "late"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🎤",
+      "line": "I came up with the snack cart. Nobody questioned me at all.",
+      "travel": "snack cart",
+      "wear": "yellow poncho",
+      "arrived": "early"
+    },
+    {
+      "name": "Juno",
+      "emoji": "🧑‍🎤",
+      "line": "I wasn't even near the projector. Ask the popcorn machine.",
+      "travel": "fire escape",
+      "wear": "striped scarf",
+      "arrived": "late"
+    },
+    {
+      "name": "Omar",
+      "emoji": "🧑‍🎓",
+      "line": "I was here before anyone. I was just checking the cables.",
+      "travel": "stairs",
+      "wear": "yellow poncho",
+      "arrived": "early"
+    },
+    {
+      "name": "Maya",
+      "emoji": "👧",
+      "line": "I took the stairs, like a normal person. Ask anyone!",
+      "travel": "stairs",
+      "wear": "red bike jacket",
+      "arrived": "early"
+    }
+  ],
+  "culprit": 0,
+  "clues": [
+    {
+      "place": "Ticket booth stamp",
+      "axis": "arrived",
+      "value": "early",
+      "not": true,
+      "text": "The ticket stamp time shows the culprit is not early; the earliest arrivals were all checked in well before the prank, so they were not first on the roof."
+    },
+    {
+      "place": "Projector cable tangle",
+      "axis": "wear",
+      "value": "yellow poncho",
+      "not": true,
+      "text": "A clue shows the culprit is not wearing the yellow poncho: a yellow poncho fiber snagged on the rail, and the owner was seen dry and sipping cocoa elsewhere."
+    },
+    {
+      "place": "Snack table napkin",
+      "axis": "wear",
+      "value": "striped scarf",
+      "not": true,
+      "text": "A dropped napkin confirms the culprit is not the striped scarf wearer, since that scarf was found folded neatly on a bench the whole evening."
+    },
+    {
+      "place": "Rooftop door log",
+      "axis": "arrived",
+      "value": "late",
+      "text": "The rooftop door sensor logged a late entry, so the culprit is late, sneaking up after the opening credits had already rolled."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-26",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}

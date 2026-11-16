@@ -1,0 +1,94 @@
+{
+  "title": "The Swapped Starfish Stone",
+  "intro": "At the aquarium gift shop, the prize glass starfish paperweight has been replaced with a cheap plastic copy before the big raffle.",
+  "axes": [
+    {
+      "key": "wear",
+      "label": "Footwear"
+    },
+    {
+      "key": "carry",
+      "label": "Carrying"
+    },
+    {
+      "key": "spot",
+      "label": "Last seen"
+    }
+  ],
+  "suspects": [
+    {
+      "name": "Marisol",
+      "emoji": "👩",
+      "line": "I only came to buy a postcard, honest!",
+      "wear": "rain boots",
+      "carry": "tote bag",
+      "spot": "tide pool"
+    },
+    {
+      "name": "Ruth",
+      "emoji": "👵",
+      "line": "At my age, I sit down and admire the sea turtles.",
+      "wear": "sneakers",
+      "carry": "stroller",
+      "spot": "gift counter"
+    },
+    {
+      "name": "Oskar",
+      "emoji": "🧔",
+      "line": "I was counting the sharks. Ask the guide.",
+      "wear": "sneakers",
+      "carry": "tote bag",
+      "spot": "shark tank"
+    },
+    {
+      "name": "Priya",
+      "emoji": "👩‍🦱",
+      "line": "Glass paperweights? Never heard of them.",
+      "wear": "rain boots",
+      "carry": "camera",
+      "spot": "gift counter"
+    },
+    {
+      "name": "Teo",
+      "emoji": "🧒",
+      "line": "I was just looking at the jellyfish. Really.",
+      "wear": "sandals",
+      "carry": "camera",
+      "spot": "jellyfish room"
+    }
+  ],
+  "culprit": 3,
+  "clues": [
+    {
+      "place": "Sandy floor by door",
+      "axis": "wear",
+      "value": "sandals",
+      "not": true,
+      "text": "Sandal prints are everywhere near the door, but none of them lead toward the glass case. Whoever wore sandals was only admiring the seashells."
+    },
+    {
+      "place": "Shop entrance mat",
+      "axis": "wear",
+      "value": "rain boots",
+      "text": "A muddy footprint shows rain boots, the kind with a yellow stripe along the heel. Someone tracked in puddle water before the shelves were touched."
+    },
+    {
+      "place": "Stool by window",
+      "axis": "carry",
+      "value": "camera",
+      "text": "A dropped strap sits on the stool, and the bulky case still hanging from it is clearly a camera bag. Its owner was snapping photos of the tank corals."
+    },
+    {
+      "place": "Gift counter receipt",
+      "axis": "spot",
+      "value": "gift counter",
+      "text": "The register log shows someone last paid for a keychain at the gift counter. The clerk swears the shopper was still hovering there afterward, a little too casually."
+    }
+  ],
+  "meta": {
+    "date": "2026-11-21",
+    "model": "claude-haiku-5-5",
+    "attempts": 1,
+    "par": 2
+  }
+}
